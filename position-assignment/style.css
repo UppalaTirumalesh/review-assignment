@@ -1,0 +1,46 @@
+*{
+  background-color: black;
+}
+
+
+.flex-container1 {
+    background-color: white;
+    border-radius: 100px;
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .flex-container2 {
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    border-radius: 0 0 0 50px;
+    background-color: grey;
+    
+  }
+
+.flex-container1::after{
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+  border-radius: 0 50px 0 0;
+  right: 0;
+  top: 50%;
+  background-color: white;
+}
+ 
+.flex-container1::before{
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 0 0 0 50px;
+  right: 0;
+  top: 50%;
+  background-color: grey;
+}
